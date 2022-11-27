@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html>
+  <head>
+   <meta charest+"UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta name="description" content="this is a website which display many types of books">
+   <meta name="keywords" content="book,Romantic Books,Adventure Books">   
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <title>Library</title>
+   <style>
+    * {
+       box-sizing: border-box;
+       }
+
+    body {
+       font-family: Arial;
+       padding: 10px;
+       background:hsla(24, 33%, 60%, 0.3);
+          }
+
+    .header {
+	   
+       padding: 30px;
+       text-align: center;
+       background:hsla(24, 33%, 60%, 0.3);
+            }
+
+    .header h1 {
+       font-size: 50px;
+	   color:black;
+	  
+               }
+    .topnav {
+	   top: 0;
+       position: sticky;
+       overflow: hidden;
+	   background-color:hsl(0, 17%, 58%);
+            }
+	
+    .topnav a {
+	   font-size:25px;
+       float: left;
+       display: hidden;
+       color:white;
+       text-align: center;
+       padding: 16px 18px;
+       text-decoration: none;
+               }
+	
+                	
+    .topnav a:hover {
+      background-color: hsl(0, 17%, 52%);
+      color: white;
+                    }
+    .topnav .search-container {
+       float: right;
+           }
+
+    .topnav input[type=text] {
+       padding: 6px;
+       margin-top: 8px;
+       font-size: 17px;
+       border: none;
+     }
+
+    .search-container button {
+      float: right;
+      padding: 6px 10px;
+      margin-top: 8px;
+      margin-right: 16px;
+      background: #ddd;
+      font-size: 17px;
+      border: none;
+      cursor: pointer;
+     }
+
+    .search-container button:hover {
+      background: #ccc;
+     }
+    @media screen and (max-width: 600px) {
+    .topnav .search-container {
+       float: none;
+     }
+   .topnav input[type=text],.search-container button {
+    float: none;
+    display: block;
+    text-align: left;
+    width: 100%;
+    margin: 0;
+    padding: 14px;
+  }
+  .topnav input[type=text] {
+    border: 1px solid #ccc;  
+  }
+}
+
+    .leftcolumn {   
+      float: left;
+      width: 75%;
+                }
+    .rightcolumn {
+      float: left;
+      width: 25%;
+      padding-left: 20px;
+                 }
+    .fakeimg {
+	
+      color:black;
+      width: 100%;
+      padding: 20px;
+             }
+    .card {
+      background-color:hsla(24, 33%, 60%, 0.3);
+      padding: 10px;
+      margin-top: 20px;
+         }
+    .row:after {
+      content: "";
+      display: table;
+      clear: both;
+               }
+    .footer {
+      padding: 20px;
+      text-align: center;
+      background: hsla(24, 33%, 60%, 0.3);
+      margin-top: 20px;
+            }
+    div.gallery {
+      margin: 20px;
+      border: 1px solid #ccc;
+      background-color:white;
+      float: left;
+      width: 28%;
+                }
+    div.gallery:hover {
+      border: 1px solid black;
+                      }
+
+    div.gallery img {
+      width: 100%;
+      height: 380px;
+                    }
+    div.desc {
+      padding: 15px;
+      text-align: center;
+             }
+    @media screen and (max-width: 800px) {
+    .leftcolumn, .rightcolumn {   
+      width: 100%;
+      padding: 0;
+                              }
+    }
+
+     
+    }
+   </style>
+
+  </head>
+    <body>
+      
+	   <div class="topnav">
+         <a href="book.html" style="background-color:hsl(0, 18%, 50%);"><b>Home </b></a>
+         <a href="#"><b>Contact </b></a>
+         <a href="#"><b>Feedback </b></a>
+		 <a href="complain.html"><b>Complain</b></a>
+		 <a href="#"><b>Why we read</b></a>
+         <a href="#"><b>Sign-out</b></a>
+		 <div class="search-container">
+    <form action="#">
+      <input type="text" placeholder="Search.." name="search">
+      <button type="submit" onclick="alert('NOT FOUND')"><i class="fa fa-search"></i></button>
+    </form>
+  </div>
+       </div>
+       <div class="header">
+         <h1>Library</h1>
+         <p>Welcome to our library , wish you to find what you need.</p>
+       </div>
+       </br>
+       <div class="row">
+         <div class="leftcolumn">
+           <div class="card">
+	         <div>
+               <p>you can choose the type of books that sutiable for you</p>
+             </div>
+			 <div class="gallery">
+               <a target="_blank" href="advanture.html" onclick="alertt()">
+               <img src="advn.JPG" alt="Advantuer Books" title="Advantuer Books" >
+               </a>
+               <div class="desc">Adventure Books</div>
+             </div>
+			 <div class="gallery">
+               <a target="_blank" href="#">
+               <img src="p.JPEG" alt="Romantic Books" title="Romantic Books">
+               </a>
+               <div class="desc">Romantic Books</div>
+             </div>
+			 
+			 <div class="gallery">
+               <a target="_blank" href="#">
+               <img src="ein.JPG" alt="Scientific Books" title="Scientific Books">
+               </a>
+               <div class="desc">Scientific Books</div>
+             </div>
+			 <div class="gallery"> 
+               <a target="_blank" href="#">
+               <img src="comm.jpg" alt="Comic books" title="Comic books">
+               </a>
+			   
+               <div class="desc">Comic books</div>
+             </div>
+	         <div class="gallery">
+               <a target="_blank" href="#">
+               <img src="sinf.PNG" alt="Science Fiction Books" title="Science Fiction Books">
+               </a>
+               <div class="desc">Science Fiction Books</div>
+             </div>
+             <div class="gallery">
+               <a target="_blank" href="#">
+               <img src="hiss.PNG" alt="Historic Books" title="Historic Books">
+               </a>
+               <div class="desc">Historic Books</div>
+             </div>
+            </div>
+            </div>
+            <div class="rightcolumn">
+             <div class="card">
+             <h2 style=" font-size:30px;">About Us</h2>
+             <div ><Img src="capture.JPG" height="80%" width="100%" ></div>
+             <p style="color: hsl(0, 17%, 59%);"><b><i>We 're a library that displays many types of books which are popular like Advanture , Comic and Romantic..</i><b></p>
+             </div>
+             <div class="card">
+			  <h2><b>Contents Of Page</b></h2>
+              <div class="fakeimg" style="background-image:url('body.JPG'); color:white;"> <p style="text-align:center;">
+		      <i>Science Fiction books</br>
+		      Scientific books</br>
+		      Adventure books</br>
+		      Historic books</br>			  
+		      Romantic books</br>
+		      Comic books</br>
+			  </i></p>
+			 </div>
+             </div> 
+			 
+             <div class="card">
+              <h2>Follow Us</h2>
+              <p style="color: hsl(0, 17%, 59%);"><i>to have any new version..</i></p>
+             </div>
+             </div>
+        </div>
+                <div class="footer">
+         <p></p>
+        </div>
+    </body>
+</html>
